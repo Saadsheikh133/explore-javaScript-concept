@@ -30,10 +30,17 @@ num3.shift()
 const friends1 = ["rohim", "korim", "sakib", "shofik"];
 // console.log(friends1.slice(2)); //Output: [ 'sakib', 'shofik' ]
 // console.log(friends1.slice(1, 3)) //Output: [ 'korim', 'sakib' ]
-// console.log(friends1.slice(2, 3)) //Output: [ 'sakib' ]
+// console.log(friends1.slice(1-3)) //Output: [ 'sakib' ]
 
-// array concat method - merge two or more arrays
+// concat method - merge two or more arrays
 const arr = [1, 2, 3, 4];
 const arr2 = [5, 6, 7];
 const array = arr.concat(arr2);
-console.log(array) //Output: [1, 2, 3, 4, 5, 6, 7];
+// console.log(array) //Output: [1, 2, 3, 4, 5, 6, 7];
+
+// splice method - add/remove an element in an array
+const letters = ['a', 'c', 'e', 'f'];
+letters.splice(1, 0, 'b');
+console.log(letters); // Output: [ 'a', 'b', 'c', 'e', 'f' ]
+letters.splice(3, 2, 'd');
+console.log(letters); // Output: [ 'a', 'b', 'c', 'd' ]
